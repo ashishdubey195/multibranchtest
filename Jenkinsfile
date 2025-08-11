@@ -1,8 +1,8 @@
 pipeline{
-  agent
+  agent any
   stages{
     stage('Branch test'){
-      step{
+      steps{
         echo "the branch name is ${env.BRANCH_NAME}"
       }
     }
